@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Text Us Now</title>
+  <script>
+    function openSMS() {
+      var smsURL = 'sms:31086?body=JOIN';
+      window.location.href = smsURL;
+
+      // Show fallback after 2 seconds if SMS app didn't open
+      setTimeout(function() {
+        document.getElementById('fallback').style.display = 'block';
+      }, 2000);
+    }
+    window.onload = openSMS;
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    #fallback {
+      display: none;
+      margin-top: 40px;
+      font-size: 18px;
+      color: #333;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #007AFF;
+      color: white;
+      padding: 14px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Almost There!</h1>
+  <p>If your SMS app didn’t open automatically, please tap the button below or manually text <strong>JOIN</strong> to <strong>31086</strong>.</p>
+  <div id="fallback">
+    <a href="sms:31086?body=JOIN" class="button">Text Us Now</a>
+  </div>
+</body>
+</html>
