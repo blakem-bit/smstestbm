@@ -3,7 +3,31 @@ VERSION:3.0
 FN:IL MAKIAGE
 ORG:IL MAKIAGE
 TEL:31086
-EMAIL:customerservice@ilmakiage.com
-URL:https://www.ilmakiage.com/?cid=awtbyb&utm_source=google&utm_medium=cpc&utm_campaign=Search%20-%20Brand-us&utm_content=11295296595_109138939885&utm_term=il%20makiage__e__c__9060351&cid=awtbyb&gad_source=1&gad_campaignid=11295296595&gbraid=0AAAAADBaOXAu4jZjJ_WFEwaMVpMXF4Zdm&gclid=CjwKCAjwlaTGBhANEiwAoRgXBUfJZBrE3axFyF-EVrl7Mvun8G4w0N_bNjIgaOx6IbKkRtPZC4baXBoC5IUQAvD_BwE
+EMAIL:no-reply@ilmakiage.com 
+PHOTO;ENCODING=BASE64;bcc9922b-fb3a-4867-8d7c-4fdce1a80aae=png:
+<BASE64_DATA_OF_YOUR_LOCAL_IMAGE>
+
+BEGIN:VCARD
+VERSION:3.0
+FN:IL MAKIAGE
+ORG:IL MAKIAGE
+TEL:31086
+EMAIL:no-reply@ilmakiage.com 
+URL:https://www.ilmakiage.com
+PHOTO;ENCODING=b;TYPE=PNG:<const fs = require('fs');
+const path = require('path');
+
+const imagePath = path.join(
+  'C:', 'Users', 'blake.massoni', 'textuscode',
+  'bcc9922b-fb3a-4867-8d7c-4fdce1a80aae.png'
+);
+
+fs.readFile(imagePath, (err, data) => {
+  if (err) throw err;
+  const base64 = data.toString('base64');
+  console.log(base64); // copy this string
+});
+>
 END:VCARD
+
 
