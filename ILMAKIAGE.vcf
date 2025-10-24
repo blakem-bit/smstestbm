@@ -4,30 +4,9 @@ FN:IL MAKIAGE
 ORG:IL MAKIAGE
 TEL:31086
 EMAIL:no-reply@ilmakiage.com 
-PHOTO;ENCODING=BASE64;bcc9922b-fb3a-4867-8d7c-4fdce1a80aae=png:
-<BASE64_DATA_OF_YOUR_LOCAL_IMAGE>
-
-BEGIN:VCARD
-VERSION:3.0
-FN:IL MAKIAGE
-ORG:IL MAKIAGE
-TEL:31086
-EMAIL:no-reply@ilmakiage.com 
 URL:https://www.ilmakiage.com
-PHOTO;ENCODING=b;TYPE=PNG:<const fs = require('fs');
-const path = require('path');
-
-const imagePath = path.join(
-  'C:', 'Users', 'blake.massoni', 'textuscode',
-  'bcc9922b-fb3a-4867-8d7c-4fdce1a80aae.png'
-);
-
-fs.readFile(imagePath, (err, data) => {
-  if (err) throw err;
-  const base64 = data.toString('base64');
-  console.log(base64); // copy this string
-});
->
+PHOTO;ENCODING=b;TYPE=PNG:C:bcc9922b-fb3a-4867-8d7c-4fdce1a80aae.png
 END:VCARD
+
 
 
